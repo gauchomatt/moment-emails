@@ -637,20 +637,6 @@ table.links-wrapper td.wrapper {
 table.illustration .wrapper {
 	padding-top: 0;
 }
-td[class="illustration-pic"] {
-	height: 274px;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-	background-image: url('http://f.cl.ly/items/3x3G1A2C4023030L1T1i/bg-illustration-city-balloons@2x.png') !important;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: 83% center;
-}
-td[class="illustration-pic"] img { 
-	display: none; 
-}
 /* Misc. */
 table.space {
 	height: 45px;
