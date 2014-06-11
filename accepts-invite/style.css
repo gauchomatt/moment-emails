@@ -641,7 +641,7 @@ table.meta p a {
 table.meta p .dots {
 	color: #ffffff;
 	font-size: 8px;
-	margin: 0 5px
+	margin: 0 5px;
 }
 table.balloon .wrapper,
 table.balloon .wrapper td {
