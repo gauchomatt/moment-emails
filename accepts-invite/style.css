@@ -604,18 +604,18 @@ table.avatar .wrapper td {
 	padding-bottom: 0;
 }
 table.avatar .wrapper img.avatar-pic {
-	-webkit-border-top-left-radius: 100%;
-	-webkit-border-top-right-radius: 100%;
-	-webkit-border-bottom-right-radius: 100%;
-	-webkit-border-bottom-left-radius: 100%;
-	-moz-border-radius-topleft: 100%;
-	-moz-border-radius-topright: 100%;
-	-moz-border-radius-bottomright: 100%;
-	-moz-border-radius-bottomleft: 100%;
-	border-top-left-radius: 100%;
-	border-top-right-radius: 100%;
-	border-bottom-right-radius: 100%;
-	border-bottom-left-radius: 100%;
+	-webkit-border-top-left-radius: 35px;
+	-webkit-border-top-right-radius: 35px;
+	-webkit-border-bottom-right-radius: 35px;
+	-webkit-border-bottom-left-radius: 35px;
+	-moz-border-radius-topleft: 35px;
+	-moz-border-radius-topright: 35px;
+	-moz-border-radius-bottomright: 35px;
+	-moz-border-radius-bottomleft: 35px;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	border-bottom-left-radius: 35px;
 	background-color: #fcd5bd;
 	border-width: 3px;
 	border-style: solid;
