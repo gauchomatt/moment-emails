@@ -441,7 +441,7 @@ body.outlook p {
 @media only screen and (max-width: 580px) {
 
 	table[class="body"] img {
-		width: auto !important;
+		/*width: auto !important;*/
 		/*height: auto !important;*/
 	}
 
@@ -654,8 +654,10 @@ table.columns .right-text-pad {
 	padding-right: 10px;
 }
 @media only screen and (max-width: 580px) {
-	td[class="illustration-pic"] {
-		height: 230px; 
+	.illustration-pic {
+		height: auto !important;
+		max-width: 600px !important;
+		width: 100% !important;
 	}
 	table[class="body"] .right-text-pad {
 		padding-left: 10px !important;
