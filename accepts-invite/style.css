@@ -663,6 +663,12 @@ table.links-wrapper td.wrapper {
 table.illustration .wrapper {
 	padding-top: 0;
 }
+table.illustration img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	line-height: 100%;
+}
 /* Misc. */
 table.space {
 	height: 45px;
