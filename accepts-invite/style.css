@@ -561,20 +561,6 @@ table.container.shadow {
 	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.25);
 	box-shadow: 0 2px 2px rgba(0,0,0,.25);
 }
-.top {
-	/*background-color: #fef1e9;
-	background-image: url('http://f.cl.ly/items/2n022y2o3k0V082s1j18/bg-letter-top@2x.png');
-	background-repeat: repeat-x;
-	background-position: bottom center;
-	background-size: 5px 5px;*/
-}
-.bottom {
-	background-color: #fef1e9;
-	background-image: url('http://f.cl.ly/items/0h323S0c1y0d2H2C2j0s/bg-letter-bottom@2x.png');
-	background-repeat: repeat-x;
-	background-position: top center;
-	background-size: 5px 5px;
-}
 
 table.header {
 	background-color: #ffffff;
