@@ -600,18 +600,18 @@ table.avatar .wrapper td {
 	padding-bottom: 0;
 }
 table.avatar .wrapper img.avatar-pic {
-	-webkit-border-top-left-radius: 35px;
-	-webkit-border-top-right-radius: 35px;
-	-webkit-border-bottom-right-radius: 35px;
-	-webkit-border-bottom-left-radius: 35px;
-	-moz-border-radius-topleft: 35px;
-	-moz-border-radius-topright: 35px;
-	-moz-border-radius-bottomright: 35px;
-	-moz-border-radius-bottomleft: 35px;
-	border-top-left-radius: 35px;
-	border-top-right-radius: 35px;
-	border-bottom-right-radius: 35px;
-	border-bottom-left-radius: 35px;
+	-webkit-border-top-left-radius: 150px;
+	-webkit-border-top-right-radius: 150px;
+	-webkit-border-bottom-right-radius: 150px;
+	-webkit-border-bottom-left-radius: 150px;
+	-moz-border-radius-topleft: 150px;
+	-moz-border-radius-topright: 150px;
+	-moz-border-radius-bottomright: 150px;
+	-moz-border-radius-bottomleft: 150px;
+	border-top-left-radius: 150px;
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
 	background-color: #fcd5bd;
 	border-width: 3px;
 	border-style: solid;
