@@ -7,6 +7,9 @@
 		<style>
 
 		<style type="text/css">
+			/* Google Font */
+			@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
+
 			/* Client-specific Styles */
 
 			/* Force Outlook to provide a "view in browser" menu link. */
@@ -26,14 +29,15 @@
 			.ExternalClass td, 
 			.ExternalClass div { line-height: 100%; } 
 			#backgroundTable { margin:0; padding:0; width:100% !important; line-height: 100% !important; }
+
+
 			img { outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic; }
 			a img { border:none; }
 			.image_fix { display:block; }
 			p { margin: 0px 0px !important; }
-			
 			table td { border-collapse: collapse; }
 			table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
-			/*a {color: #e95353;text-decoration: none;text-decoration:none!important;}*/
+			a {color: #e95353; text-decoration: none; text-decoration: none !important; }
 			
 			/* STYLES */
 			table[class=full] { width: 100%; clear: both; }
@@ -42,7 +46,8 @@
 			/*IPAD STYLES*/
 			/*################################################*/
 			@media only screen and (max-width: 640px) {
-				a[href^="tel"], a[href^="sms"] {
+				a[href^="tel"], 
+				a[href^="sms"] {
 					text-decoration: none;
 					color: #ffffff; /* or whatever your want */
 					pointer-events: none;
@@ -54,8 +59,8 @@
 					pointer-events: auto;
 					cursor: default;
 				}
-				table[class=devicewidth] { width: 440px!important; text-align:center!important; }
-				table[class=devicewidthinner] { width: 420px!important; text-align:center!important; }
+				table[class=devicewidth] { width: 440px!important; text-align: center!important; }
+				table[class=devicewidthinner] { width: 420px!important; text-align: center!important; }
 				table[class="sthide"]{ display: none!important; }
 				img[class="bigimage"]{ width: 420px!important; height: 219px!important; }
 				img[class="col2img"]{ width: 420px!important; height: 258px!important; }
@@ -95,7 +100,7 @@
 <body>
 <div class="block">
 	<!-- Start of preheader -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="preheader">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="preheader">
 		<tbody>
 			<tr>
 				<td width="100%">
@@ -103,12 +108,11 @@
 						<tbody>
 							<!-- Spacing -->
 							<tr>
-								<td width="100%" height="5"></td>
+								<td width="100%" height="40"></td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
-								<td align="right" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 10px;color: #999999" st-content="preheader">
-									If you cannot read this email, please  <a class="hlite" href="#" style="text-decoration: none; color: #0db9ea">click here</a> 
+								<td align="right" valign="middle" style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 10px;color: #999999" st-content="preheader">
 								</td>
 							</tr>
 							<!-- Spacing -->
@@ -126,7 +130,7 @@
 </div>
 <div class="block">
 	<!-- start of header -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="header">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="header">
 		<tbody>
 			<tr>
 				<td>
@@ -151,7 +155,7 @@
 									<table width="280" cellpadding="0" cellspacing="0" border="0" align="right" class="devicewidth">
 										<tbody>
 											<tr>
-												<td width="270" valign="middle" style="font-family: Helvetica, Arial, sans-serif;font-size: 14px; color: #ffffff;line-height: 24px; padding: 10px 0;" align="right" class="menu" st-content="menu">
+												<td width="270" valign="middle" style="font-family: 'Avenir', Helvetica, arial, sans-serif;font-size: 14px; color: #ffffff;line-height: 24px; padding: 10px 0;" align="right" class="menu" st-content="menu">
 													<a href="#" style="text-decoration: none; color: #ffffff;">HOME</a>
 													&nbsp;|&nbsp;
 													<a href="#" style="text-decoration: none; color: #ffffff;">ABOUT</a>
@@ -174,7 +178,7 @@
 	<!-- end of header -->
 </div><div class="block">
 	<!-- image + text -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="bigimage">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="bigimage">
 		<tbody>
 			<tr>
 				<td>
@@ -201,7 +205,7 @@
 											<!-- Spacing -->
 											<!-- title -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="rightimage-title">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="rightimage-title">
 													LOREM IPSUM
 												</td>
 											</tr>
@@ -213,7 +217,7 @@
 											<!-- Spacing -->
 											<!-- content -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 24px;" st-content="rightimage-paragraph">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 24px;" st-content="rightimage-paragraph">
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 												</td>
 											</tr>
@@ -259,7 +263,7 @@
 
 <div class="block">
 	<!-- start textbox-with-title -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fulltext">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fulltext">
 		<tbody>
 			<tr>
 				<td>
@@ -276,7 +280,7 @@
 										<tbody>
 											<!-- Title -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:center;line-height: 20px;" st-title="fulltext-title">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:center;line-height: 20px;" st-title="fulltext-title">
 													NICE HEADING HERE
 												</td>
 											</tr>
@@ -288,7 +292,7 @@
 											<!-- End of spacing -->
 											<!-- content -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: #95a5a6; text-align:center;line-height: 30px;" st-content="fulltext-paragraph">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 14px; color: #95a5a6; text-align:center;line-height: 30px;" st-content="fulltext-paragraph">
 													Lorem ipsum dolor sit amet
 												</td>
 											</tr>
@@ -339,7 +343,7 @@
 </div>
 <div class="block">
 	<!-- start of left image -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="leftimage">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="leftimage">
 		<tbody>
 			<tr>
 				<td>
@@ -381,7 +385,7 @@
 														<tbody>
 															<!-- title -->
 															<tr>
-																<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="leftimage-title">
+																<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="leftimage-title">
 																	LOREM IPSUM
 																</td>
 															</tr>
@@ -393,7 +397,7 @@
 															<!-- Spacing -->
 															<!-- content -->
 															<tr>
-																<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 24px;" st-content="leftimage-paragraph">
+																<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 24px;" st-content="leftimage-paragraph">
 																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 																</td>
 															</tr>
@@ -444,7 +448,7 @@
 </div>
 <div class="block">
 	<!-- start of left image -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="rightimage">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="rightimage">
 		<tbody>
 			<tr>
 				<td>
@@ -486,7 +490,7 @@
 														<tbody>
 															<!-- title -->
 															<tr>
-																<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="rightimage-title">
+																<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="rightimage-title">
 																	LOREM IPSUM
 																</td>
 															</tr>
@@ -498,7 +502,7 @@
 															<!-- Spacing -->
 															<!-- content -->
 															<tr>
-																<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 24px;" st-content="rightimage-paragraph">
+																<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 24px;" st-content="rightimage-paragraph">
 																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 																</td>
 															</tr>
@@ -549,7 +553,7 @@
 </div>
 <div class="block">
 	<!-- fulltext -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fulltext">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fulltext">
 		<tbody>
 			<tr>
 				<td>
@@ -566,7 +570,7 @@
 										<tbody>
 											<!-- Title -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:center;line-height: 20px;" st-title="fulltext-title">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:center;line-height: 20px;" st-title="fulltext-title">
 													NICE HEADING HERE
 												</td>
 											</tr>
@@ -578,7 +582,7 @@
 											<!-- End of spacing -->
 											<!-- content -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: #95a5a6; text-align:center;line-height: 30px;" st-content="fulltext-paragraph">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 14px; color: #95a5a6; text-align:center;line-height: 30px;" st-content="fulltext-paragraph">
 													Lorem ipsum dolor sit amet
 												</td>
 											</tr>
@@ -605,7 +609,7 @@
 
 <div class="block">
 	<!-- Start of 2-columns -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="2columns">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="2columns">
 		<tbody>
 			<tr>
 				<td>
@@ -640,7 +644,7 @@
 																		<tbody>
 																			<!-- title -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="2col-title1">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="2col-title1">
 																					LOREM IPSUM
 																				</td>
 																			</tr>
@@ -652,7 +656,7 @@
 																			<!-- /Spacing -->
 																			<!-- content -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="2col-para1">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="2col-para1">
 																					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.
 																				</td>
 																			</tr>
@@ -718,7 +722,7 @@
 																		<tbody>
 																			<!-- title -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="2col-title2">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="2col-title2">
 																					LOREM IPSUM
 																				</td>
 																			</tr>
@@ -730,7 +734,7 @@
 																			<!-- /Spacing -->
 																			<!-- content -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="2col-para2">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="2col-para2">
 																					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.
 																				</td>
 																			</tr>
@@ -785,7 +789,7 @@
 </div>
 <div class="block">
 	<!-- 3-columns -->  
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="3columns">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="3columns">
 		<tbody>
 			<tr>
 				<td>
@@ -822,7 +826,7 @@
 																			<!-- Spacing -->
 																			<!-- title2 -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="3col-title1">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="3col-title1">
 																					Lorem Ipsum
 																				</td>
 																			</tr>
@@ -834,7 +838,7 @@
 																			<!-- Spacing -->
 																			<!-- content2 -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="3col-para1">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="3col-para1">
 																					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 																				</td>
 																			</tr>
@@ -900,7 +904,7 @@
 																			<!-- Spacing -->
 																			<!-- title2 -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="3col-title2">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="3col-title2">
 																					Lorem Ipsum
 																				</td>
 																			</tr>
@@ -912,7 +916,7 @@
 																			<!-- Spacing -->
 																			<!-- content2 -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="3col-para2">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="3col-para2">
 																					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 																				</td>
 																			</tr>
@@ -979,7 +983,7 @@
 																			<!-- Spacing -->
 																			<!-- title -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="3col-title3">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="3col-title3">
 																					Lorem Ipsum
 																				</td>
 																			</tr>
@@ -991,7 +995,7 @@
 																			<!-- Spacing -->
 																			<!-- content -->
 																			<tr>
-																				<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="3col-para1">
+																				<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #95a5a6; text-align:left;line-height: 20px;" st-content="3col-para1">
 																					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 																				</td>
 																			</tr>
@@ -1048,7 +1052,7 @@
 
 <div class="block">
 	<!-- Full + text -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fullimage">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fullimage">
 		<tbody>
 			<tr>
 				<td>
@@ -1063,7 +1067,7 @@
 										<tbody>
 											<!-- title -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="rightimage-title">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="rightimage-title">
 													LOREM IPSUM
 												</td>
 											</tr>
@@ -1075,7 +1079,7 @@
 											<!-- Spacing -->
 											<!-- content -->
 											<tr>
-												<td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #666666; text-align:left;line-height: 24px;" st-content="rightimage-paragraph">
+												<td style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 13px; color: #666666; text-align:left;line-height: 24px;" st-content="rightimage-paragraph">
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 												</td>
 											</tr>
@@ -1120,7 +1124,7 @@
 </div>
 <div class="block">
 	<!-- Start of preheader -->
-	<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="postfooter">
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="postfooter">
 		<tbody>
 			<tr>
 				<td width="100%">
@@ -1132,7 +1136,7 @@
 							</tr>
 							<!-- Spacing -->
 							<tr>
-								<td align="center" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 10px;color: #999999" st-content="preheader">
+								<td align="center" valign="middle" style="font-family: 'Avenir', Helvetica, arial, sans-serif; font-size: 10px;color: #999999" st-content="preheader">
 									If you don't want to receive updates. please  <a class="hlite" href="#" style="text-decoration: none; color: #0db9ea">unsubscribe</a> 
 								</td>
 							</tr>
