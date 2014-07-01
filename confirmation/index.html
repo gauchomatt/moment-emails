@@ -3,7 +3,7 @@
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Moment / Comment</title>
+		<title>Moment / Confirmation</title>
 		<style type="text/css">
 			@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
 			#outlook a { padding:0; }
@@ -46,13 +46,14 @@
 				}
 				table[class=devicewidth] { width: 440px!important; text-align: center!important; }
 				table[class=devicewidthinner] { width: 420px!important; text-align: center!important; }
-				table[class="sthide"],
-				td[class="sthide"] { display: none!important; }
-				img[class="image-full-width"]{ width: 440px!important; height: 208px!important; }
+				table[class="sthide"]{ display: none!important; }
+				img[class="image-full-width"]{ 
+					width: 440px!important; 
+					height: 128px!important; 
+				}
 				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
 				td[class="logo"]{ padding: 10px 0 5px 0!important; margin: 0 auto !important; }
 				img[class="logo"]{ padding: 0!important; margin: 0 auto !important; }
-				div[class="mobile-hide"] { height: 0!important; display: none!important; }
 			}
 			@media only screen and (max-width: 480px) {
 				a[href^="tel"], 
@@ -71,29 +72,36 @@
 				}
 				table[class=devicewidth] { width: 300px!important; text-align: center!important; }
 				table[class=devicewidthinner] { width: 280px!important; text-align: center!important; }
-				table[class="sthide"],
-				td[class="sthide"] { display: none!important; }
-				table[class="tablet-button"] { width: 100%!important;}
+				table[class="sthide"]{ display: none!important; }
+				table[class="tablet-button"] { width: 260px!important;}
 				a[class="button"]{ font-size: 18px; }
-				td[class="illustration"] { height: 180px; }
-				td[class="img-wrap"] { vertical-align: middle; }
-				td[class="mobile-header"] { height: 10px!important; }
-				div[class="mobile-hide"] { height: 0!important; display: none!important; }
-				img[class="image-full-width"] {
+				td[class="illustration"] { height: 87px; }
+				img[class="image-full-width"]{
 					width: 300px!important; 
-					height: 142px!important;
+					height: 87px!important;
 				}
 			}
 			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 				td[class="logo"] {
 					width: 300px!important; 
-					height: 40px!important;
-					background-image: url(http://f.cl.ly/items/2V033G232g1V0R252v1A/logo-moment-horizontal@2x.png);
-					background-size: 169px 40px;
+					height: 64px!important;
+					background-image: url(http://f.cl.ly/items/3I0l0k0L2g013d0u3i44/logo-moment-vertical@2x.png);
+					background-size: 104px 64px;
 					background-repeat: no-repeat;
-					background-position: 20px center;
+					background-position: center center;
 				}
 				td[class="logo"] img {
+					display: none !important;
+				}
+				td[class="logo-team"] {
+					width: 300px!important; 
+					height: 28px!important;
+					background-image: url(http://f.cl.ly/items/383T373V1a383G092S1K/logo-moment-team@2x.png);
+					background-size: 165px 28px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="logo-team"] img {
 					display: none !important;
 				}
 				td[class="avatar"] {
@@ -109,32 +117,21 @@
 				}
 				td[class="illustration"] {
 					width: 300px;
-					height: 142px;
-					background-image: url(http://f.cl.ly/items/1u0c1c1C0M2P1q470E46/bg-illustration-city-comment@2x.png);
-					background-size: 300px 142px;
+					height: 87px;
+					background-image: url(http://f.cl.ly/items/0r0Y0T3f1F3i2B0k0n19/bg-illustration-city-jumping@2x.png);
+					background-size: 300px 87px;
 					background-repeat: no-repeat;
 					background-position: right center;
 				}
 				td[class="illustration"] img {
 					display: none !important;
 				}
-				td[class="img-wrap"] {
-					width: 100%!important; 
-					height: 280px!important;
-					background-image: url(http://f.cl.ly/items/1H0n0W393h200N2Z0i22/img-comment-demo@2x.png);
-					background-size: 100% 100%;
-					background-repeat: no-repeat;
-					background-position: 20px center;
-				}
-				td[class="img-wrap"] img {
-					display: none !important;
-				}
 			}
 			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 				td[class="illustration"] {
 					width: 580px;
-					height: 280px;
-					background-size: 580px 274px;
+					height: 180px;
+					background-size: 580px 169px;
 				}
 			}
 		</style>		
@@ -150,8 +147,9 @@
 						<tbody>
 							<!-- Spacing -->
 							<tr>
-								<td width="100%" height="40" class="mobile-header"></td>
+								<td width="100%" height="40"></td>
 							</tr>
+							<!-- Spacing -->
 						</tbody>
 					</table>
 				</td>
@@ -177,12 +175,12 @@
 							<tr>
 								<td>
 									<!-- Logo -->
-									<table width="540" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidthinner">
+									<table width="540" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidthinner">
 										<tbody>
 											<tr>
-												<td valign="middle" width="100%" align="left" style="padding: 0px 20px;" class="logo">
+												<td valign="middle" width="100%" align="center" style="padding: 0px 20px;" class="logo">
 													<div class="imgpop">
-														<a href="#"><img src="http://f.cl.ly/items/3Q413n3s072C132Q2a0R/logo-moment-horizontal.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+														<a href="#"><img src="http://f.cl.ly/items/1g1r0v0e1O1E2V1I0r29/logo-moment-vertical.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
 													</div>
 												</td>
 											</tr>
@@ -218,14 +216,8 @@
 	<!-- End of Header -->
 </div>
 
-
-
-
-
-
-
 <div class="block">
-	<!-- Message and CTA and Listing Image -->
+	<!-- Message and CTA -->
 	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
 		<tbody>
 			<tr>
@@ -234,71 +226,46 @@
 						<tbody>
 							<!-- Spacing -->
 							<tr>
-								<td width="100%" height="30"></td>
+								<td width="100%" height="20"></td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
 								<td>
 									<table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
 										<tbody>
-											<!-- Title -->
+											<!-- Line 1 -->
 											<tr>
-												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:left; line-height: 30px;">
-													<a class="message" style="color: #f37e34; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600;" href="">Lisa Adams</a> commented
-												</td>
-											</tr>
-											<!-- End of Title -->
-											<!-- Spacing -->
-											<tr>
-												<td width="100%" height="30"></td>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 20px; color: #4f4f4f; text-align:center; line-height: 30px;">We're so happy!</td>
 											</tr>
 											<!-- Spacing -->
-											<!-- Comment Image -->
 											<tr>
-												<td>
-													<table align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
-														<tbody>
-															<!-- Comment -->
-															<tr>
-																<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size:18px; line-height:30px; text-align:left; color:#4f4f4f;">"Haha! That's pretty funny! Was this in your backyard? I haven’t seen that concrete before."</td>
-															</tr>
-															<!-- End of Comment -->
-															<!-- Spacing -->
-															<tr>
-																<td width="100%" height="10"></td>
-															</tr>
-															<!-- Spacing -->
-															<!-- Image -->
-															<tr>
-																<td width="280" height="280" align="left" class="img-wrap" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;">
-																	<img src="http://f.cl.ly/items/0M2S3p1b120q3F451c0H/img-comment-demo.png" alt="" border="0" width="280" height="280" style="display:block; border:none; outline:none; text-decoration:none; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden; ">
-																</td>
-															</tr>
-															<!-- End of Image -->
-															<!-- Spacing -->
-															<tr>
-																<td width="100%" height="30"></td>
-															</tr>
-															<!-- Spacing -->
-														</tbody>
-													</table>
-												</td>
+												<td width="100%" height="10"></td>
 											</tr>
-											<!-- End Left Image -->
+											<!-- Line 2 -->
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 20px; color: #4f4f4f; text-align:center; line-height: 30px;">Thanks for joining <a class="message" style="color: #f37e34; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600; text-decoration: underline !important;" href="">Moment</a>.</td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="10"></td>
+											</tr>
+											<!-- Line 3 -->
+											<tr>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 20px; color: #4f4f4f; text-align:center; line-height: 30px;">Please click to confirm your email address.</td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="40"></td>
+											</tr>
+											<!-- Spacing -->
 											<!-- Button -->
 											<tr>
 												<td>
-													<table width="280" height="60" align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="table-layout:fixed; margin: 0 auto;">
+													<table width="280" height="60" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="table-layout:fixed; margin: 0 auto;">
 														<tbody>
-															<!-- Spacing -->
 															<tr>
-																<td width="100%" height="10"></td>
-															</tr>
-															<!-- Spacing -->
-															<tr>
-																<td width="auto" align="left" valign="middle" height="60" class="button" style="margin:0 auto; background-color:#f37d33; border-top-left-radius:6px; border-bottom-left-radius:6px;border-top-right-radius:6px; border-bottom-right-radius:6px; background-clip: padding-box; font-size:20px; font-family: 'Avenir', 'Helvetica', arial, sans-serif; text-align:center; color:#ffffff; font-weight: 300; padding-left:40px; padding-right:40px;">
+																<td width="auto" align="center" valign="middle" height="60" class="button" style="margin:0 auto; background-color:#f37d33; border-top-left-radius:6px; border-bottom-left-radius:6px;border-top-right-radius:6px; border-bottom-right-radius:6px; background-clip: padding-box; font-size:20px; font-family: 'Avenir', 'Helvetica', arial, sans-serif; text-align:center; color:#ffffff; font-weight: 300; padding-left:40px; padding-right:40px;">
 																	<span style="color: #ffffff; font-weight: 300;">
-																		<a class="button" style="color: #ffffff; text-align:center; text-decoration: none;" href="#">Add a comment</a>
+																		<a class="button" style="color: #ffffff; text-align:center; text-decoration: none;" href="#">Click to confirm</a>
 																	</span>
 																</td>
 															</tr>
@@ -307,6 +274,41 @@
 												</td>
 											</tr>
 											<!-- End Button -->
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="10"></td>
+											</tr>
+											<!-- Line 4 -->
+											<tr>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 12px; color: #7f7f7f; text-align:center; line-height: 24px;">If the button does not work, you can paste the following link into your browser <br><a class="message" style="color: #3397da; font-size: 14px; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600; text-decoration: underline;" href="">http://moment.com/link?hefcx!0asd3?</a></td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="30"></td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td>
+													<!-- Logo Team -->
+													<table width="540" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidthinner">
+														<tbody>
+															<tr>
+																<td valign="middle" width="100%" align="center" style="padding: 0px 20px;" class="logo-team">
+																	<div class="imgpop">
+																		<a href="#"><img src="http://f.cl.ly/items/22310U3A471g2f3r1a1p/logo-moment-team.png" alt="Moment Team" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo-team"></a>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- End of Logo Team -->
+												</td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="50"></td>
+											</tr>
+											<!-- Spacing -->
 										</tbody>
 									</table>
 								</td>
@@ -340,7 +342,7 @@
 											<tr>
 												<!-- Start of Image -->
 												<td align="center" class="illustration">
-													<img width="580" height="274" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/3T2i042k2r1K3w2w1t1K/bg-illustration-city-comment.png" class="image-full-width">
+													<img width="580" height="169" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/3j28260v3i103j1J2B3S/bg-illustration-city-jumping.png" class="image-full-width">
 												</td>
 											</tr>
 											<!-- End of Image -->
