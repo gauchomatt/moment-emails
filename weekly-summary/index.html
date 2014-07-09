@@ -10,7 +10,7 @@
 			body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
 			.ExternalClass { width:100%; }
 			.ExternalClass, 
-			ExternalClass p, 
+			.ExternalClass p, 
 			.ExternalClass span, 
 			.ExternalClass font, 
 			.ExternalClass td, 
@@ -87,6 +87,26 @@
 					width: 300px!important; 
 					height: 87px!important;
 				}
+				td[class="img-wrap-1"] {
+					width: 100%!important; 
+					height: 280px!important;
+					background-image: url(http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png);
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="img-wrap-2"] {
+					width: 280px!important; 
+					height: 280px!important;
+					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
+					background-size: 280px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="img-wrap-1"] img,
+				td[class="img-wrap-2"] img {
+					display: none !important;
+				}
 			}
 			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 				td[class="logo"] {
@@ -112,18 +132,18 @@
 					display: none !important;
 				}
 				td[class="img-wrap-1"] {
-					width: 100%!important; 
+					width: 280px!important; 
 					height: 280px!important;
 					background-image: url(http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png);
-					background-size: 100% 100%;
+					background-size: 280px;
 					background-repeat: no-repeat;
 					background-position: center center;
 				}
 				td[class="img-wrap-2"] {
-					width: 100%!important; 
+					width: 280px!important; 
 					height: 280px!important;
 					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
-					background-size: 100% 100%;
+					background-size: 280px;
 					background-repeat: no-repeat;
 					background-position: center center;
 				}
@@ -146,8 +166,24 @@
 			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 				td[class="illustration"] {
 					width: 580px;
-					height: 280px;
-					background-size: 580px 274px;
+					height: 169px;
+					background-size: 580px 169px;
+				}
+				td[class="img-wrap-1"] {
+					width: 150px!important; 
+					height: 150px!important;
+					background-image: url(http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png);
+					background-size: 150px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="img-wrap-2"] {
+					width: 150px!important; 
+					height: 150px!important;
+					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
+					background-size: 150px;
+					background-repeat: no-repeat;
+					background-position: center center;
 				}
 			}
 		</style>		
@@ -406,36 +442,7 @@
 															</tr>
 															<!-- Location -->
 															<tr>
-																<td>
-																	<table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
-																		<tbody>
-																			<!-- Address + Icon -->
-																			<tr>
-																				<td>
-																					<!-- Icon -->
-																					<div class="mobile-hide">
-																						<table width="20" height="26" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
-																							<tbody>
-																								<tr>
-																									<td width="20" align="left" class="sthide">
-																										<img src="http://f.cl.ly/items/1c09031H2m2z0a0J1a2t/icon-location.png" width="13" height="16" alt="Location Icon" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="location">
-																									</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</div>
-																					<!-- Address -->
-																					<table width="520" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
-																						<tbody>
-																							<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size:18px; line-height:26px; text-align:left; color:#3397da; text-decoration:underline;">2245 Meista Vista Court</td>
-																						</tbody>
-																					</table>
-																				</td>
-																			</tr>
-																			<!-- End Address + Icon -->
-																		</tbody>
-																	</table>
-																</td>
+																<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size:18px; line-height:26px; text-align:left; color:#3397da; text-decoration:underline;">2245 Meista Vista Court</td>
 															</tr>
 															<!-- Spacing -->
 															<tr>
