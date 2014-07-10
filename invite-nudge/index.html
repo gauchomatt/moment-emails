@@ -25,10 +25,6 @@
 			a {color: #f37e34; text-decoration: none; text-decoration: none !important; }
 			table[class=full] { width: 100%; clear: both; }
 			
-			.shadow-top { border-top: 1px solid #e9ddd6;	}
-			.shadow { border-left: 1px solid #e9ddd6;	border-right: 1px solid #e9ddd6; }
-			.shadow-bottom { border-bottom: 1px solid #e9ddd6; }
-
 			@media only screen and (max-width: 640px) {
 				a[href^="tel"], 
 				a[href^="sms"] {
@@ -47,14 +43,15 @@
 				table[class="devicewidth"] { width: 440px!important; text-align: center!important; }
 				table[class="devicewidthinner"] { width: 420px!important; text-align: center!important; }
 				table[class="sthide"]{ display: none!important; }
+				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
+				td[class="logo"]{ margin: 0 auto !important; }
+				img[class="logo"]{ margin: 0 auto !important; }
 				img[class="image-full-width"] { 
 					width: 440px!important; 
 					height: 128px!important; 
 				}
-				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
-				td[class="logo"]{ padding: 10px 0 5px 0!important; margin: 0 auto !important; }
-				img[class="logo"]{ padding: 0!important; margin: 0 auto !important; }
 			}
+
 			@media only screen and (max-width: 480px) {
 				a[href^="tel"], 
 				a[href^="sms"] {
@@ -75,53 +72,10 @@
 				table[class="sthide"]{ display: none!important; }
 				table[class="tablet-button"] { width: 260px!important;}
 				a[class="button"]{ font-size: 18px; }
-				td[class="illustration"] { height: 87px; }
 				td[class="mobile-header"] { height: 10px !important; }
 				img[class="image-full-width"]{
 					width: 300px!important; 
 					height: 87px!important;
-				}
-			}
-			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-				td[class="logo"] {
-					width: 300px!important; 
-					height: 64px!important;
-					background-image: url(http://f.cl.ly/items/3I0l0k0L2g013d0u3i44/logo-moment-vertical@2x.png);
-					background-size: 104px 64px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="logo"] img {
-					display: none !important;
-				}
-				td[class="avatar"] {
-					width: 70px!important; 
-					height: 70px!important;
-					background-image: url(http://f.cl.ly/items/201E2j1C283d1l2D3Q2c/bg-avatar-demo@2x.png);
-					background-size: 70px 70px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="avatar"] img {
-					display: none !important;
-				}
-				td[class="illustration"] {
-					width: 300px;
-					height: 87px;
-					background-image: url(http://f.cl.ly/items/3c0r3P2z0Q002O3d0H20/bg-illustration-city-dog@2x.png);
-					background-size: 300px 87px;
-					background-repeat: no-repeat;
-					background-position: right center;
-				}
-				td[class="illustration"] img {
-					display: none !important;
-				}
-			}
-			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-				td[class="illustration"] {
-					width: 580px;
-					height: 180px;
-					background-size: 580px 169px;
 				}
 			}
 		</style>		
@@ -169,7 +123,7 @@
 											<tr>
 												<td valign="middle" width="100%" align="center" style="padding: 0px 20px;" class="logo">
 													<div class="imgpop">
-														<a href="#"><img src="http://f.cl.ly/items/1g1r0v0e1O1E2V1I0r29/logo-moment-vertical.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+														<a href="#"><img width="104" height="64" src="http://f.cl.ly/items/3I0l0k0L2g013d0u3i44/logo-moment-vertical@2x.png" alt="Moment" border="0" style="width:104px; height:64px; display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
 													</div>
 												</td>
 											</tr>
@@ -182,7 +136,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<!-- Border -->
 							<tr>
 								<td>
@@ -195,7 +148,6 @@
 									</table>
 								</td>
 							</tr>
-							<!-- End of Boarder -->
 						</tbody>
 					</table>
 				</td>
@@ -217,7 +169,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
@@ -227,12 +178,10 @@
 												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:center; line-height: 34px;">Dear Angela, <br> Sara Jane previously invited you to join <a class="message" style="color: #f37e34; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600; text-decoration:underline;" href="">Moment</a>. Join today and connect with the moms you trust and the moms Angela trust!
 												</td>
 											</tr>
-											<!-- End of Title -->
 											<!-- Spacing -->
 											<tr>
 												<td width="100%" height="40"></td>
 											</tr>
-											<!-- Spacing -->
 											<!-- Button -->
 											<tr>
 												<td>
@@ -275,7 +224,6 @@
 							<tr>
 								<td width="100%" height="70"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<table width="580" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
@@ -283,10 +231,9 @@
 											<tr>
 												<!-- Start of Image -->
 												<td align="center" class="illustration">
-													<img width="580" height="169" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/261k0r3e2D1u3H2k0B2V/bg-illustration-city-dog.png" class="image-full-width">
+													<img width="580" height="169" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/3c0r3P2z0Q002O3d0H20/bg-illustration-city-dog@2x.png" style="width:580px; height:169px;" class="image-full-width">
 												</td>
 											</tr>
-											<!-- End of Image -->
 										</tbody>
 									</table>
 								</td>
@@ -295,7 +242,6 @@
 							<tr>
 								<td width="100%" height="40"></td>
 							</tr>
-							<!-- Spacing -->
 						</tbody>
 					</table>
 				</td>
