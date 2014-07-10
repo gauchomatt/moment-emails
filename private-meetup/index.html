@@ -25,10 +25,6 @@
 			a {color: #f37e34; text-decoration: none; text-decoration: none !important; }
 			table[class=full] { width: 100%; clear: both; }
 			
-			.shadow-top { border-top: 1px solid #e9ddd6;	}
-			.shadow { border-left: 1px solid #e9ddd6;	border-right: 1px solid #e9ddd6; }
-			.shadow-bottom { border-bottom: 1px solid #e9ddd6; }
-
 			@media only screen and (max-width: 640px) {
 				a[href^="tel"], 
 				a[href^="sms"] {
@@ -48,11 +44,12 @@
 				table[class="devicewidthinner"] { width: 420px!important; text-align: center!important; }
 				table[class="sthide"],
 				td[class="sthide"] { display: none!important; }
-				img[class="image-full-width"]{ width: 440px!important; height: 208px!important; }
 				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
-				td[class="logo"]{ padding: 10px 0 5px 0!important; margin: 0 auto !important; }
-				img[class="logo"]{ padding: 0!important; margin: 0 auto !important; }
 				div[class="mobile-hide"] { height: 0!important; display: none!important; }
+				img[class="image-full-width"]{ 
+					width: 440px!important; 
+					height: 208px!important; 
+				}
 			}
 			@media only screen and (max-width: 480px) {
 				a[href^="tel"], 
@@ -71,9 +68,9 @@
 				}
 				table[class="devicewidth"] { width: 300px!important; text-align: center!important; }
 				table[class="devicewidthinner"] { width: 280px!important; text-align: center!important; }
+				table[class="tablet-button"] { width: 100%!important;}
 				table[class="sthide"],
 				td[class="sthide"] { display: none!important; }
-				table[class="tablet-button"] { width: 100%!important;}
 				a[class="button"]{ font-size: 18px; }
 				td[class="illustration"] { height: 180px; }
 				td[class="img-wrap"] { vertical-align: middle; }
@@ -82,48 +79,6 @@
 				img[class="image-full-width"] {
 					width: 300px!important; 
 					height: 142px!important;
-				}
-			}
-			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-				td[class="logo"] {
-					width: 300px!important; 
-					height: 40px!important;
-					background-image: url(http://f.cl.ly/items/2V033G232g1V0R252v1A/logo-moment-horizontal@2x.png);
-					background-size: 169px 40px;
-					background-repeat: no-repeat;
-					background-position: 20px center;
-				}
-				td[class="logo"] img {
-					display: none !important;
-				}
-				td[class="avatar"] {
-					width: 70px!important; 
-					height: 70px!important;
-					background-image: url(http://f.cl.ly/items/201E2j1C283d1l2D3Q2c/bg-avatar-demo@2x.png);
-					background-size: 70px 70px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="avatar"] img {
-					display: none !important;
-				}
-				td[class="illustration"] {
-					width: 300px;
-					height: 142px;
-					background-image: url(http://f.cl.ly/items/1j3T0O0f3l0l3H0J3S2E/bg-illustration-city-moms@2x.png);
-					background-size: 300px 142px;
-					background-repeat: no-repeat;
-					background-position: right center;
-				}
-				td[class="illustration"] img {
-					display: none !important;
-				}
-			}
-			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-				td[class="illustration"] {
-					width: 580px;
-					height: 280px;
-					background-size: 580px 274px;
 				}
 			}
 		</style>		
@@ -162,7 +117,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<!-- Logo -->
@@ -171,20 +125,18 @@
 											<tr>
 												<td valign="middle" width="100%" align="left" style="padding: 0px 20px;" class="logo">
 													<div class="imgpop">
-														<a href="#"><img src="http://f.cl.ly/items/3Q413n3s072C132Q2a0R/logo-moment-horizontal.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+														<a href="#"><img width="169" height="40" src="http://f.cl.ly/items/2V033G232g1V0R252v1A/logo-moment-horizontal@2x.png" alt="Moment" border="0" style="width:169px; height:40px; display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
 													</div>
 												</td>
 											</tr>
 										</tbody>
 									</table>
-									<!-- End of Logo -->
 								</td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<!-- Border -->
 							<tr>
 								<td>
@@ -197,7 +149,6 @@
 									</table>
 								</td>
 							</tr>
-							<!-- End of Boarder -->
 						</tbody>
 					</table>
 				</td>
@@ -331,7 +282,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<table width="580" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
@@ -339,10 +289,9 @@
 											<tr>
 												<!-- Start of Image -->
 												<td align="center" class="illustration">
-													<img width="580" height="274" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/3c1e2o2l0y3C3P3D3c2Z/bg-illustration-city-moms.png" class="image-full-width">
+													<img width="580" height="274" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/1j3T0O0f3l0l3H0J3S2E/bg-illustration-city-moms@2x.png" style="width:580px; height:274px; " class="image-full-width">
 												</td>
 											</tr>
-											<!-- End of Image -->
 										</tbody>
 									</table>
 								</td>
@@ -351,7 +300,6 @@
 							<tr>
 								<td width="100%" height="40"></td>
 							</tr>
-							<!-- Spacing -->
 						</tbody>
 					</table>
 				</td>
@@ -373,7 +321,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<!-- Border -->
 							<tr>
 								<td>
@@ -386,12 +333,10 @@
 									</table>
 								</td>
 							</tr>
-							<!-- End of Boarder -->
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="15"></td>
 							</tr>
-							<!-- Spacing -->
 							<!-- Meta -->
 							<tr>
 								<td align="center" valign="middle" style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 14px; line-height:30px; color: #f37e34"><p style="text-align: center;">&copy; 2014 <span style="color:#f37e34; text-decoration: none;">Moment.com</span>, Inc. <span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span><span style="color:#f37e34; text-decoration: none;">39 Mesa Street</span> <span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span> <span style="color:#f37e34; text-decoration: none;">Suite 102A</span> <span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span> San Francisco, CA 94129</p>
@@ -401,12 +346,10 @@
 								<td align="center" valign="middle" style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 14px; line-height:30px; color: #f37e34"><p style="text-align: center;"><a href="#" style="text-decoration: none; color:#f37e34;">Unsubscribe</a><span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span><a href="#" style="text-decoration: none; color:#f37e34;">Contact</a></p>
 								</td>
 							</tr>
-							<!-- End of Meta -->
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="40"></td>
 							</tr>
-							<!-- Spacing -->
 						</tbody>
 					</table>
 				</td>
