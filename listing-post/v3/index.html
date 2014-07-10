@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Moment / Listing Post</title>
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
+			#outlook a { padding:0; }
+			body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
+			.ExternalClass { width:100%; }
+			.ExternalClass *, 
+			.ExternalClass p, 
+			.ExternalClass span, 
+			.ExternalClass font, 
+			.ExternalClass td, 
+			.ExternalClass div { line-height: 100%; }
+			#backgroundTable { margin:0; padding:0; width:100% !important; line-height: 100% !important; }
+			img { outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic; }
+			a img { border:none; }
+			.image_fix { display:block; }
+			p { margin: 0px 0px !important; }
+			table td { border-collapse: collapse; }
+			table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+			a {color: #f37e34; text-decoration: none; text-decoration: none !important; }
+			table[class=full] { width: 100%; clear: both; }
+			
+			.shadow-top { border-top: 1px solid #e9ddd6;	}
+			.shadow { border-left: 1px solid #e9ddd6;	border-right: 1px solid #e9ddd6; }
+			.shadow-bottom { border-bottom: 1px solid #e9ddd6; }
+
+			@media only screen and (max-width: 640px) {
+				a[href^="tel"], 
+				a[href^="sms"] {
+					text-decoration: none;
+					color: #ffffff;
+					pointer-events: none;
+					cursor: default;
+				}
+				.mobile_link a[href^="tel"], 
+				.mobile_link a[href^="sms"] {
+					text-decoration: default;
+					color: #ffffff !important;
+					pointer-events: auto;
+					cursor: default;
+				}
+				table[class="devicewidth"] { width: 440px!important; text-align: center!important; }
+				table[class="devicewidthinner"] { width: 420px!important; text-align: center!important; }
+				table[class="sthide"]{ display: none!important; }
+				img[class="image-full-width"]{ width: 440px!important; height: 208px!important; }
+				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
+				td[class="logo"]{ padding: 10px 0 5px 0!important; margin: 0 auto !important; }
+				img[class="logo"]{ padding: 0!important; margin: 0 auto !important; }
+				td[class="img-wrap"] {
+					width: 280px!important; 
+					height: 280px!important;
+					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
+					background-size: 280px 280px;
+					background-repeat: no-repeat;
+					background-position: 0 center;
+				}
+				td[class="img-wrap"] img {
+					display: none !important;
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				a[href^="tel"], 
+				a[href^="sms"] {
+					text-decoration: none;
+					color: #ffffff;
+					pointer-events: none;
+					cursor: default;
+				}
+				.mobile_link a[href^="tel"], 
+				.mobile_link a[href^="sms"] {
+					text-decoration: default;
+					color: #ffffff !important; 
+					pointer-events: auto;
+					cursor: default;
+				}
+				table[class="devicewidth"] { width: 300px!important; text-align: center!important; }
+				table[class="devicewidthinner"] { width: 280px!important; text-align: center!important; }
+				table[class="sthide"]{ display: none!important; }
+				table[class="tablet-button"] { width: 100%!important;}
+				a[class="button"]{ font-size: 18px; }
+				td[class="illustration"] { height: 180px; }
+				td[class="img-wrap"] { vertical-align: middle; }
+				td[class="mobile-header"] { height: 10px !important; }
+				td[class="img-wrap"] {
+					width: 100%!important; 
+					height: 280px!important;
+					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					background-position: 0 center;
+				}
+				td[class="img-wrap"] img {
+					display: none !important;
+				}
+				img[class="image-full-width"] {
+					width: 300px!important; 
+					height: 142px!important;
+				}
+			}
+			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+				td[class="logo"] {
+					width: 300px!important; 
+					height: 40px!important;
+					background-image: url(http://f.cl.ly/items/2V033G232g1V0R252v1A/logo-moment-horizontal@2x.png);
+					background-size: 169px 40px;
+					background-repeat: no-repeat;
+					background-position: 20px center;
+				}
+				td[class="logo"] img {
+					display: none !important;
+				}
+				td[class="avatar"] {
+					width: 70px!important; 
+					height: 70px!important;
+					background-image: url(http://f.cl.ly/items/201E2j1C283d1l2D3Q2c/bg-avatar-demo@2x.png);
+					background-size: 70px 70px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="avatar"] img {
+					display: none !important;
+				}
+				td[class="illustration"] {
+					width: 300px;
+					height: 142px;
+					background-image: url(http://f.cl.ly/items/201G0A2P0G3n1h3u0f2H/bg-illustration-city-bike@2x.png);
+					background-size: 300px 142px;
+					background-repeat: no-repeat;
+					background-position: right center;
+				}
+				td[class="illustration"] img {
+					display: none !important;
+				}
+				td[class="img-wrap"] {
+					width: 280px!important; 
+					height: 280px!important;
+					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
+					background-size: 280px 280px;
+					background-repeat: no-repeat;
+					background-position: 0 center;
+				}
+				td[class="img-wrap"] img {
+					display: none !important;
+				}
+			}
+			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+				td[class="illustration"] {
+					width: 580px;
+					height: 280px;
+					background-size: 580px 274px;
+				}
+				td[class="img-wrap"] {
+					width: 150px!important; 
+					height: 150px!important;
+					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
+					background-size: 150px 150px;
+					background-repeat: no-repeat;
+					background-position: 0 center;
+				}
+			}
+		</style>		
+	</head>
+<body>
+<div class="block">
+	<!-- Start of Preheader -->
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+		<tbody>
+			<tr>
+				<td width="100%">
+					<table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+						<tbody>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="40" class="mobile-header"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- End of Preheader -->
+</div>
+
+<div class="block">
+	<!-- Start of Header -->
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+		<tbody>
+			<tr>
+				<td>
+					<table width="580" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+						<tbody>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
+							<!-- Spacing -->
+							<tr>
+								<td>
+									<!-- Logo -->
+									<table width="540" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidthinner">
+										<tbody>
+											<tr>
+												<td valign="middle" width="100%" align="left" style="padding: 0px 20px;" class="logo">
+													<div class="imgpop">
+														<a href="#"><img src="http://f.cl.ly/items/3Q413n3s072C132Q2a0R/logo-moment-horizontal.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- End of Logo -->
+								</td>
+							</tr>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
+							<!-- Spacing -->
+							<!-- Border -->
+							<tr>
+								<td>
+									<table width="540" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidthinner" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+										<tbody>
+											<tr>
+												<td valign="middle" width="100%" align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #fcd5bd;" class="border"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<!-- End of Boarder -->
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- End of Header -->
+</div>
+
+<div class="block">
+	<!-- Message and CTA and Listing Image -->
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+		<tbody>
+			<tr>
+				<td>
+					<table bgcolor="#ffffff" width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+						<tbody>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="30"></td>
+							</tr>
+							<!-- Spacing -->
+							<tr>
+								<td>
+									<table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+										<tbody>
+											<!-- Title -->
+											<tr>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:left; line-height: 30px;">
+													<a class="message" style="color: #f37e34; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600;" href="">Melissa Hoffman</a> is selling
+												</td>
+											</tr>
+											<!-- End of Title -->
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="30"></td>
+											</tr>
+											<!-- Spacing -->
+											<!-- Left Image -->
+											<tr>
+												<td>
+													<table width="150" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+														<tbody>
+															<!-- Image -->
+															<tr>
+																<td width="150" height="150" align="center" class="img-wrap" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;">
+																	<img src="http://f.cl.ly/items/1S3l1d3u3K15261Y0v2h/img-listing-demo.png" alt="" border="0" width="150" height="150" style="display:block; border:none; outline:none; text-decoration:none; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden; ">
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- Mobile Spacing -->
+													<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing">
+														<tbody>
+															<tr>
+																<td width="100%" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- Mobile Spacing -->
+													<!-- Start of Right Column -->
+													<table width="370" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+														<tbody>
+															<!-- Title -->
+															<tr>
+																<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size:18px; line-height:26px; text-align:left; color:#4f4f4f; font-weight:bold; font-weight:700;">Graco Duo-Glider Double Stroller</td>
+															</tr>
+															<!-- End of Title -->
+															<!-- Spacing -->
+															<tr>
+																<td width="100%" height="10" style="font-size: 1px; line-height: 1px;"></td>
+															</tr>
+															<!-- Spacing -->
+															<!-- Price -->
+															<tr>
+																<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size:18px; line-height:26px; text-align:left; color:#4f4f4f;">$57</td>
+															</tr>
+															<!-- End of Price -->
+															<!-- Spacing -->
+															<tr>
+																<td width="100%" height="10" style="font-size: 1px; line-height: 1px;"></td>
+															</tr>
+															<!-- Spacing -->
+															<!-- Content -->
+															<tr>
+																<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 16px; color: #4f4f4f; text-align:left; line-height: 26px;">"We just purchased this Graco before Christmas, but my parents ended up buying us a new one for the holidays."</td>
+															</tr>
+															<!-- End of Content -->
+															<!-- Spacing -->
+															<tr>
+																<td width="100%" height="10"></td>
+															</tr>
+															<!-- Spacing -->
+														</tbody>
+													</table>
+													<!-- End of Right Column -->
+												</td>
+											</tr>
+											<!-- End Left Image -->
+											<!-- Button -->
+											<tr>
+												<td>
+													<table width="280" height="60" align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="table-layout:fixed; margin: 0 auto;">
+														<tbody>
+															<!-- Spacing -->
+															<tr>
+																<td width="100%" height="40"></td>
+															</tr>
+															<!-- Spacing -->
+															<tr>
+																<td width="auto" align="left" valign="middle" height="60" class="button" style="margin:0 auto; background-color:#f37d33; border-top-left-radius:6px; border-bottom-left-radius:6px;border-top-right-radius:6px; border-bottom-right-radius:6px; background-clip: padding-box; font-size:20px; font-family: 'Avenir', 'Helvetica', arial, sans-serif; text-align:center; color:#ffffff; font-weight: 300; padding-left:40px; padding-right:40px;">
+																	<span style="color: #ffffff; font-weight: 300;">
+																		<a class="button" style="color: #ffffff; text-align:center; text-decoration: none;" href="#">Ask a question</a>
+																	</span>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<!-- End Button -->
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- End of Message and CTA -->
+</div>
+
+<div class="block">
+	<!-- Illustration -->
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+		<tbody>
+			<tr>
+				<td>
+					<table width="580" bgcolor="#ffffff" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+						<tbody>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
+							<!-- Spacing -->
+							<tr>
+								<td>
+									<table width="580" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+										<tbody>
+											<tr>
+												<!-- Start of Image -->
+												<td align="center" class="illustration">
+													<img width="580" height="274" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/1M0L1F0E3w2T0p28052n/bg-illustration-city-bike.png" class="image-full-width">
+												</td>
+											</tr>
+											<!-- End of Image -->
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="40"></td>
+							</tr>
+							<!-- Spacing -->
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- End of Illustration -->
+</div>
+
+<div class="block">
+	<!-- Start of Postfooter -->
+	<table width="100%" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+		<tbody>
+			<tr>
+				<td width="100%">
+					<table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+						<tbody>
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
+							<!-- Spacing -->
+							<!-- Border -->
+							<tr>
+								<td>
+									<table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+										<tbody>
+											<tr>
+												<td valign="middle" width="100%" align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #fcd5bd;" class="border"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<!-- End of Boarder -->
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="15"></td>
+							</tr>
+							<!-- Spacing -->
+							<!-- Meta -->
+							<tr>
+								<td align="center" valign="middle" style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 14px; line-height:30px; color: #f37e34"><p style="text-align: center;">&copy; 2014 <span style="color:#f37e34; text-decoration: none;">Moment.com</span>, Inc. <span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span><span style="color:#f37e34; text-decoration: none;">39 Mesa Street</span> <span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span> <span style="color:#f37e34; text-decoration: none;">Suite 102A</span> <span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span> San Francisco, CA 94129</p>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle" style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 14px; line-height:30px; color: #f37e34"><p style="text-align: center;"><a href="#" style="text-decoration: none; color:#f37e34;">Unsubscribe</a><span class="dots" style="color:#ffffff; font-size:8px; padding-left:5px; padding-right:5px;">•</span><a href="#" style="text-decoration: none; color:#f37e34;">Contact</a></p>
+								</td>
+							</tr>
+							<!-- End of Meta -->
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="40"></td>
+							</tr>
+							<!-- Spacing -->
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- End of Postfooter -->
+</div>
+
+</body></html>
