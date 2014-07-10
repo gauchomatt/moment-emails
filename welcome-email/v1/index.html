@@ -3,7 +3,7 @@
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Moment / Invite Nudge</title>
+		<title>Moment / Welcome Email</title>
 		<style type="text/css">
 			@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
 			#outlook a { padding:0; }
@@ -46,10 +46,12 @@
 				}
 				table[class="devicewidth"] { width: 440px!important; text-align: center!important; }
 				table[class="devicewidthinner"] { width: 420px!important; text-align: center!important; }
+				table[class="devicewidth-envelope"] { width: 464px!important; text-align: center!important;	}
+
 				table[class="sthide"]{ display: none!important; }
 				img[class="image-full-width"] { 
-					width: 440px!important; 
-					height: 128px!important; 
+					width: 464px!important; 
+					height: 386px!important; 
 				}
 				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
 				td[class="logo"]{ padding: 10px 0 5px 0!important; margin: 0 auto !important; }
@@ -72,21 +74,23 @@
 				}
 				table[class="devicewidth"] { width: 300px!important; text-align: center!important; }
 				table[class="devicewidthinner"] { width: 280px!important; text-align: center!important; }
+				table[class="devicewidth-envelope"] { width: 316px!important; text-align: center!important;	}
+
 				table[class="sthide"]{ display: none!important; }
 				table[class="tablet-button"] { width: 260px!important;}
 				a[class="button"]{ font-size: 18px; }
-				td[class="illustration"] { height: 87px; }
+				td[class="illustration"] { height: 250px; }
 				td[class="mobile-header"] { height: 10px !important; }
 				img[class="image-full-width"]{
-					width: 300px!important; 
-					height: 87px!important;
+					width: 316px!important; 
+					height: 263px!important;
 				}
 			}
 			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 				td[class="logo"] {
 					width: 300px!important; 
 					height: 64px!important;
-					background-image: url(http://f.cl.ly/items/3I0l0k0L2g013d0u3i44/logo-moment-vertical@2x.png);
+					background-image: url(http://f.cl.ly/items/1n0h3V262Q2v1q0U452q/logo-moment-vertical-orange@2x.png);
 					background-size: 104px 64px;
 					background-repeat: no-repeat;
 					background-position: center center;
@@ -106,22 +110,22 @@
 					display: none !important;
 				}
 				td[class="illustration"] {
-					width: 300px;
-					height: 87px;
-					background-image: url(http://f.cl.ly/items/3c0r3P2z0Q002O3d0H20/bg-illustration-city-dog@2x.png);
-					background-size: 300px 87px;
+					width: 316px;
+					height: 263px;
+					background-image: url(http://f.cl.ly/items/0R2L3E3Y0x0L170V3W2J/bg-illustration-envelope@2x.png);
+					background-size: 316px 263px;
 					background-repeat: no-repeat;
-					background-position: right center;
+					background-position: center center;
 				}
 				td[class="illustration"] img {
 					display: none !important;
 				}
 			}
-			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 				td[class="illustration"] {
-					width: 580px;
-					height: 180px;
-					background-size: 580px 169px;
+					width: 610px;
+					height: 508px;
+					background-size: 610px 508px;
 				}
 			}
 		</style>		
@@ -154,13 +158,12 @@
 		<tbody>
 			<tr>
 				<td>
-					<table width="580" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+					<table width="580" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
 						<tbody>
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<!-- Logo -->
@@ -169,20 +172,18 @@
 											<tr>
 												<td valign="middle" width="100%" align="center" style="padding: 0px 20px;" class="logo">
 													<div class="imgpop">
-														<a href="#"><img src="http://f.cl.ly/items/1g1r0v0e1O1E2V1I0r29/logo-moment-vertical.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+														<a href="#"><img src="http://f.cl.ly/items/3m462S0y2Y1q3o1w2V0A/logo-moment-vertical-orange.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
 													</div>
 												</td>
 											</tr>
 										</tbody>
 									</table>
-									<!-- End of Logo -->
 								</td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<!-- Border -->
 							<tr>
 								<td>
@@ -195,7 +196,10 @@
 									</table>
 								</td>
 							</tr>
-							<!-- End of Boarder -->
+							<!-- Spacing -->
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
 						</tbody>
 					</table>
 				</td>
@@ -215,24 +219,54 @@
 						<tbody>
 							<!-- Spacing -->
 							<tr>
-								<td width="100%" height="20"></td>
+								<td width="100%" height="50"></td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
 								<td>
-									<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+									<table width="500" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
 										<tbody>
 											<!-- Title -->
 											<tr>
-												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:center; line-height: 34px;">Dear Angela, <br> Sara Jane previously invited you to join <a class="message" style="color: #f37e34; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600; text-decoration:underline;" href="">Moment</a>. Join today and connect with the moms you trust and the moms Angela trust!
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:center; line-height: 30px; font-weight:300;">Melissa Hoffman invited you to join <a class="message" style="color: #f37e34; text-align: center; text-decoration: none; font-weight: bold; font-weight: 600; text-decoration:underline;" href="">Moment</a>.
 												</td>
 											</tr>
-											<!-- End of Title -->
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="20"></td>
+											</tr>
+											<!-- Border -->
+											<tr>
+												<td>
+													<table width="310" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidthinner" style="width:310px; margin:0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align:center;">
+														<tbody>
+															<tr>
+																<td valign="middle" width="100%" align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ebebeb; text-align:center;" class="border"></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="20"></td>
+											</tr>
+											<!-- Sub-title -->
+											<tr>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:center; line-height: 30px; font-weight:300;">Moment is a mobile application built just for moms.</td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="20"></td>
+											</tr>
+											<!-- Sub-title -->
+											<tr>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 18px; color: #4f4f4f; text-align:center; line-height: 30px; font-weight:300;">Connect with the moms you trust.<br> And the moms they trust.</td>
+											</tr>
 											<!-- Spacing -->
 											<tr>
 												<td width="100%" height="40"></td>
 											</tr>
-											<!-- Spacing -->
 											<!-- Button -->
 											<tr>
 												<td>
@@ -241,7 +275,7 @@
 															<tr>
 																<td width="auto" align="center" valign="middle" height="60" class="button" style="margin:0 auto; background-color:#f37d33; border-top-left-radius:6px; border-bottom-left-radius:6px;border-top-right-radius:6px; border-bottom-right-radius:6px; background-clip: padding-box; font-size:20px; font-family: 'Avenir', 'Helvetica', arial, sans-serif; text-align:center; color:#ffffff; font-weight: 300; padding-left:40px; padding-right:40px;">
 																	<span style="color: #ffffff; font-weight: 300;">
-																		<a class="button" style="color: #ffffff; text-align:center; text-decoration: none;" href="#">Download the app!</a>
+																		<a class="button" style="color: #ffffff; text-align:center; text-decoration: none;" href="#">Get the app!</a>
 																	</span>
 																</td>
 															</tr>
@@ -249,7 +283,14 @@
 													</table>
 												</td>
 											</tr>
-											<!-- End Button -->
+											<!-- Spacing -->
+											<tr>
+												<td width="100%" height="10"></td>
+											</tr>
+											<!-- Line 4 -->
+											<tr>
+												<td style="font-family: 'Avenir', 'Helvetica', arial, sans-serif; font-size: 14px; color: #7f7f7f; text-align:center; line-height: 24px;">Be sure to use the email address <br> <a class="message" style="color:#f37e34; font-size: 12px; text-align: center; text-decoration: none; text-decoration: underline;" href="">kathryn@kathryncorro.com</a> to sign up.</td>
+											</tr>
 										</tbody>
 									</table>
 								</td>
@@ -269,21 +310,16 @@
 		<tbody>
 			<tr>
 				<td>
-					<table width="580" bgcolor="#ffffff" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+					<table width="610" bgcolor="#ffffff" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth-envelope">
 						<tbody>
-							<!-- Spacing -->
-							<tr>
-								<td width="100%" height="70"></td>
-							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
-									<table width="580" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+									<table width="610" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth-envelope">
 										<tbody>
 											<tr>
 												<!-- Start of Image -->
 												<td align="center" class="illustration">
-													<img width="580" height="169" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/261k0r3e2D1u3H2k0B2V/bg-illustration-city-dog.png" class="image-full-width">
+													<img width="610" height="508" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/1M2643231C1V1v3W261v/bg-illustration-envelope.png" class="image-full-width">
 												</td>
 											</tr>
 											<!-- End of Image -->
@@ -291,11 +327,6 @@
 									</table>
 								</td>
 							</tr>
-							<!-- Spacing -->
-							<tr>
-								<td width="100%" height="40"></td>
-							</tr>
-							<!-- Spacing -->
 						</tbody>
 					</table>
 				</td>

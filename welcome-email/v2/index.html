@@ -10,7 +10,7 @@
 			body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
 			.ExternalClass { width:100%; }
 			.ExternalClass, 
-			ExternalClass p, 
+			.ExternalClass p, 
 			.ExternalClass span, 
 			.ExternalClass font, 
 			.ExternalClass td, 
@@ -79,18 +79,17 @@
 				table[class="sthide"]{ display: none!important; }
 				table[class="tablet-button"] { width: 260px!important;}
 				a[class="button"]{ font-size: 18px; }
-				td[class="illustration"] { height: 250px; }
 				td[class="mobile-header"] { height: 10px !important; }
 				img[class="image-full-width"]{
 					width: 316px!important; 
 					height: 263px!important;
 				}
 			}
-			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+			@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) { 
 				td[class="logo"] {
 					width: 300px!important; 
 					height: 64px!important;
-					background-image: url(http://f.cl.ly/items/1n0h3V262Q2v1q0U452q/logo-moment-vertical-orange@2x.png);
+					background-image: url(http://f.cl.ly/items/3I0l0k0L2g013d0u3i44/logo-moment-vertical@2x.png);
 					background-size: 104px 64px;
 					background-repeat: no-repeat;
 					background-position: center center;
@@ -109,23 +108,44 @@
 				td[class="avatar"] img {
 					display: none !important;
 				}
+			}
+			@media only screen and (min-width: 641px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 				td[class="illustration"] {
-					width: 316px;
-					height: 263px;
+					width: 610px;
+					height: 508px;
 					background-image: url(http://f.cl.ly/items/0R2L3E3Y0x0L170V3W2J/bg-illustration-envelope@2x.png);
-					background-size: 316px 263px;
+					background-size: 610px 508px;
 					background-repeat: no-repeat;
-					background-position: right center;
+					background-position: center center;
 				}
 				td[class="illustration"] img {
 					display: none !important;
 				}
 			}
-			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+			@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 				td[class="illustration"] {
-					width: 580px;
-					height: 180px;
-					background-size: 580px 169px;
+					width: 464px; 
+					height: 386px;
+					background-image: url(http://f.cl.ly/items/0R2L3E3Y0x0L170V3W2J/bg-illustration-envelope@2x.png);
+					background-size: 464px 386px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="illustration"] img {
+					display: none !important;
+				}
+			}
+			@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+				td[class="illustration"] {
+					width: 316px; 
+					height: 263px;
+					background-image: url(http://f.cl.ly/items/0R2L3E3Y0x0L170V3W2J/bg-illustration-envelope@2x.png);
+					background-size: 316px 263px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				td[class="illustration"] img {
+					display: none !important;
 				}
 			}
 		</style>		
@@ -158,12 +178,13 @@
 		<tbody>
 			<tr>
 				<td>
-					<table width="580" bgcolor="#fef1e9" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+					<table width="580" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
 						<tbody>
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
+							<!-- Spacing -->
 							<tr>
 								<td>
 									<!-- Logo -->
@@ -172,18 +193,20 @@
 											<tr>
 												<td valign="middle" width="100%" align="center" style="padding: 0px 20px;" class="logo">
 													<div class="imgpop">
-														<a href="#"><img src="http://f.cl.ly/items/3m462S0y2Y1q3o1w2V0A/logo-moment-vertical-orange.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+														<a href="#"><img src="http://f.cl.ly/items/1g1r0v0e1O1E2V1I0r29/logo-moment-vertical.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
 													</div>
 												</td>
 											</tr>
 										</tbody>
 									</table>
+									<!-- End of Logo -->
 								</td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
+							<!-- Spacing -->
 							<!-- Border -->
 							<tr>
 								<td>
@@ -196,10 +219,7 @@
 									</table>
 								</td>
 							</tr>
-							<!-- Spacing -->
-							<tr>
-								<td width="100%" height="20"></td>
-							</tr>
+							<!-- End of Boarder -->
 						</tbody>
 					</table>
 				</td>
@@ -238,10 +258,10 @@
 											<!-- Border -->
 											<tr>
 												<td>
-													<table width="310" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidthinner" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+													<table width="310" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidthinner" style="width:310px; margin:0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align:center;">
 														<tbody>
 															<tr>
-																<td valign="middle" width="100%" align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ebebeb;" class="border"></td>
+																<td valign="middle" width="100%" align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ebebeb; text-align:center;" class="border"></td>
 															</tr>
 														</tbody>
 													</table>
