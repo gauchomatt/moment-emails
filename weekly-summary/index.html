@@ -25,10 +25,6 @@
 			a {color: #f37e34; text-decoration: none; text-decoration: none !important; }
 			table[class=full] { width: 100%; clear: both; }
 			
-			.shadow-top { border-top: 1px solid #e9ddd6;	}
-			.shadow { border-left: 1px solid #e9ddd6;	border-right: 1px solid #e9ddd6; }
-			.shadow-bottom { border-bottom: 1px solid #e9ddd6; }
-
 			@media only screen and (max-width: 640px) {
 				a[href^="tel"], 
 				a[href^="sms"] {
@@ -48,15 +44,19 @@
 				table[class="devicewidthinner"] { width: 420px!important; text-align: center!important; }
 				table[class="sthide"],
 				td[class="sthide"] { display: none!important; }
+				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
+				div[class="mobile-hide"] { height: 0!important; display: none!important; }
+				td[class="image-post"],
+				img[class="image-post"] {
+					width: 280px!important;
+					height: 280px!important;
+				}
 				img[class="image-full-width"] { 
 					width: 440px!important; 
 					height: 128px!important; 
 				}
-				td[class="menu"]{ text-align: center !important; padding: 0 0 10px 0 !important; }
-				td[class="logo"]{ padding: 10px 0 5px 0!important; margin: 0 auto !important; }
-				img[class="logo"]{ padding: 0!important; margin: 0 auto !important; }
-				div[class="mobile-hide"] { height: 0!important; display: none!important; }
 			}
+
 			@media only screen and (max-width: 480px) {
 				a[href^="tel"], 
 				a[href^="sms"] {
@@ -74,116 +74,21 @@
 				}
 				table[class="devicewidth"] { width: 300px!important; text-align: center!important; }
 				table[class="devicewidthinner"] { width: 280px!important; text-align: center!important; }
+				table[class="tablet-button"] { width: 100%!important; }
 				table[class="sthide"],
 				td[class="sthide"] { display: none!important; }
-				table[class="tablet-button"] { width: 100%!important;}
 				a[class="button"]{ font-size: 18px; }
-				td[class="illustration"] { height: 87px; }
-				td[class="img-wrap-1"],
-				td[class="img-wrap-2"] { vertical-align: middle; }
 				td[class="mobile-header"] { height: 10px!important; }
 				div[class="mobile-hide"] { height: 0!important; display: none!important; }
 				img[class="image-full-width"]{
 					width: 300px!important; 
 					height: 87px!important;
 				}
-				td[class="img-wrap-1"] {
-					width: 100%!important; 
+				td[class="image-post"],
+				img[class="image-post"] {
+					width: 280px!important;
 					height: 280px!important;
-					background-image: url(http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png);
-					background-size: 100% 100%;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="img-wrap-2"] {
-					width: 280px!important; 
-					height: 280px!important;
-					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
-					background-size: 280px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="img-wrap-1"] img,
-				td[class="img-wrap-2"] img {
-					display: none !important;
-				}
-			}
-			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-				td[class="logo"] {
-					width: 300px!important; 
-					height: 40px!important;
-					background-image: url(http://f.cl.ly/items/2V033G232g1V0R252v1A/logo-moment-horizontal@2x.png);
-					background-size: 169px 40px;
-					background-repeat: no-repeat;
-					background-position: 20px center;
-				}
-				td[class="logo"] img {
-					display: none !important;
-				}
-				td[class="avatar"] {
-					width: 70px!important; 
-					height: 70px!important;
-					background-image: url(http://f.cl.ly/items/201E2j1C283d1l2D3Q2c/bg-avatar-demo@2x.png);
-					background-size: 70px 70px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="avatar"] img {
-					display: none !important;
-				}
-				td[class="img-wrap-1"] {
-					width: 280px!important; 
-					height: 280px!important;
-					background-image: url(http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png);
-					background-size: 280px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="img-wrap-2"] {
-					width: 280px!important; 
-					height: 280px!important;
-					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
-					background-size: 280px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="img-wrap-1"] img,
-				td[class="img-wrap-2"] img {
-					display: none !important;
-				}
-				td[class="illustration"] {
-					width: 300px;
-					height: 87px;
-					background-image: url(http://f.cl.ly/items/3c0r3P2z0Q002O3d0H20/bg-illustration-city-dog@2x.png);
-					background-size: 300px 87px;
-					background-repeat: no-repeat;
-					background-position: right center;
-				}
-				td[class="illustration"] img {
-					display: none !important;
-				}
-			}
-			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-				td[class="illustration"] {
-					width: 580px;
-					height: 169px;
-					background-size: 580px 169px;
-				}
-				td[class="img-wrap-1"] {
-					width: 150px!important; 
-					height: 150px!important;
-					background-image: url(http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png);
-					background-size: 150px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				td[class="img-wrap-2"] {
-					width: 150px!important; 
-					height: 150px!important;
-					background-image: url(http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png);
-					background-size: 150px;
-					background-repeat: no-repeat;
-					background-position: center center;
+					vertical-align: middle;
 				}
 			}
 		</style>		
@@ -222,7 +127,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<!-- Logo -->
@@ -231,20 +135,18 @@
 											<tr>
 												<td valign="middle" width="100%" align="left" style="padding: 0px 20px;" class="logo">
 													<div class="imgpop">
-														<a href="#"><img src="http://f.cl.ly/items/3Q413n3s072C132Q2a0R/logo-moment-horizontal.png" alt="Moment" border="0" style="display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
+														<a href="#"><img width="169" height="40" src="http://f.cl.ly/items/2V033G232g1V0R252v1A/logo-moment-horizontal@2x.png" alt="Moment" border="0" style="width:169px; height:40px; display:block; border:none; outline:none; text-decoration:none;" class="logo"></a>
 													</div>
 												</td>
 											</tr>
 										</tbody>
 									</table>
-									<!-- End of Logo -->
 								</td>
 							</tr>
 							<!-- Spacing -->
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<!-- Border -->
 							<tr>
 								<td>
@@ -257,7 +159,6 @@
 									</table>
 								</td>
 							</tr>
-							<!-- End of Border -->
 						</tbody>
 					</table>
 				</td>
@@ -266,12 +167,6 @@
 	</table>
 	<!-- End of Header -->
 </div>
-
-
-
-
-
-
 
 <div class="block">
 	<!-- Message and CTA and Listing Image -->
@@ -285,7 +180,6 @@
 							<tr>
 								<td width="100%" height="20"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
@@ -339,10 +233,10 @@
 																	<!-- Left Image -->
 																	<table width="150" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
 																		<tbody>
-																			<!-- Image -->
-																			<tr>
-																				<td width="150" height="150" align="center" class="img-wrap-1" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;">
-																					<img src="http://f.cl.ly/items/360A2z2M140c2T113f3q/img-posting-demo.png" alt="" border="0" width="150" height="150" style="display:block; border:none; outline:none; text-decoration:none; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden; ">
+																				<!-- Image -->
+																				<tr>
+																					<td width="150" height="150" align="center" class="image-post" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; width:150px; height:150px;">
+																					<img src="http://f.cl.ly/items/2o011T223H0L023w193K/img-posting-demo@2x.png" alt="" border="0" width="150" height="150" style="display:block; border:none; outline:none; text-decoration:none; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden;" class="image-post">
 																				</td>
 																			</tr>
 																		</tbody>
@@ -477,8 +371,8 @@
 																		<tbody>
 																			<!-- Image -->
 																			<tr>
-																				<td width="150" height="150" align="center" class="img-wrap-2" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;">
-																					<img src="http://f.cl.ly/items/1S3l1d3u3K15261Y0v2h/img-listing-demo.png" alt="" border="0" width="150" height="150" style="display:block; border:none; outline:none; text-decoration:none; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden; ">
+																				<td width="150" height="150" align="center" class="image-post" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; width:150px; height:150px;">
+																					<img src="http://f.cl.ly/items/1Q2A1G181q2y3v3L3C07/img-listing-demo@2x.png" alt="" border="0" width="150" height="150" style="display:block; border:none; outline:none; text-decoration:none; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden;" class="image-post">
 																				</td>
 																			</tr>
 																		</tbody>
@@ -554,9 +448,8 @@
 						<tbody>
 							<!-- Spacing -->
 							<tr>
-								<td width="100%" height="70"></td>
+								<td width="100%" height="50"></td>
 							</tr>
-							<!-- Spacing -->
 							<tr>
 								<td>
 									<table width="580" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
@@ -564,10 +457,9 @@
 											<tr>
 												<!-- Start of Image -->
 												<td align="center" class="illustration">
-													<img width="580" height="169" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/261k0r3e2D1u3H2k0B2V/bg-illustration-city-dog.png" class="image-full-width">
+													<img width="580" height="169" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="http://f.cl.ly/items/3c0r3P2z0Q002O3d0H20/bg-illustration-city-dog@2x.png" style="width:580px; height:169px;" class="image-full-width">
 												</td>
 											</tr>
-											<!-- End of Image -->
 										</tbody>
 									</table>
 								</td>
@@ -576,7 +468,6 @@
 							<tr>
 								<td width="100%" height="40"></td>
 							</tr>
-							<!-- Spacing -->
 						</tbody>
 					</table>
 				</td>
